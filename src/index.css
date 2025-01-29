@@ -11,14 +11,14 @@ body {
 }
 
 .container {
-  max-width: 81.25rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 /* HEADER */
 header {
   background-color: #ffffff;
-  padding: 1.5625rem;
+  padding: 1.5625rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +43,14 @@ img {
 
 .header-nav .active a {
   color: #0282f9;
-  border-bottom: 0.25rem solid #0282f9;
-  padding-bottom: 2.1875rem;
+  border-bottom: 0.375rem solid #0282f9;
+  padding-bottom: 3.75rem;
+}
+
+/* MAIN */
+main {
+  background-color: #1c1c1c;
+  padding: 2.5rem;
+  color: white;
+  font-size: 1.25rem;
 }
