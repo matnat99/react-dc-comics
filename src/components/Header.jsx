@@ -1,4 +1,4 @@
-import navHeaderLinks from "../data/navHeaderLinksData";
+import headerLinks from "../data/headerLinksData";
 
 export default function Header() {
   return (
@@ -6,7 +6,7 @@ export default function Header() {
       <img src="/img/dc-logo.png" alt="Logo DC" />
       <nav className="header-nav">
         <ul>
-          {navHeaderLinks.map((link) => (
+          {headerLinks.map((link) => (
             <li key={link.id} className={link.current ? "active" : ""}>
               <a href={link.url}>{link.text}</a>
             </li>

@@ -1,4 +1,4 @@
-const navHeaderLinks = [
+const headerLinks = [
   {
     id: 1,
     text: "CHARACTERS",
@@ -61,4 +61,4 @@ const navHeaderLinks = [
   },
 ];
 
-export default navHeaderLinks;
+export default headerLinks;
