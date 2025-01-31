@@ -10,15 +10,18 @@ export default function FooterCenter() {
               return (
                 <div className="col" key={col.id}>
                   <h4>{col.title}</h4>
-                  <ul>
-                    {col.links.map((link) => {
-                      return (
-                        <li key={link.id}>
-                          <a href={link.url}>{link.text}</a>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  {col.lists.map((list) => (
+                    <div key={list.id}>
+                      {list.title && <h4>{list.title}</h4>}
+                      <ul>
+                        {list.links.map((link) => (
+                          <li key={link.id}>
+                            <a href={link.url}>{link.text}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               );
             })}

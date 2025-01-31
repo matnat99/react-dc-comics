@@ -91,7 +91,6 @@ main {
   background-image: url("/img/footer-bg.jpg");
   background-size: cover;
   color: white;
-  max-height: 25rem;
 }
 
 .footer-center-flex {
